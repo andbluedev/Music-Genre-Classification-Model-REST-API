@@ -49,7 +49,7 @@ docker build -t music-genre-prediction-model-rest-api .
 ```
 docker run -p 5000:5000  music-genre-prediction-model-rest-api
 ```
-*note*: Add `-d`  to this command if you wan't to run the app in detached mode (running in the background leaving the current shell available for other commands). 
+*note*: Add `-d`  to this command if you wan't to run the app in detached mode (running in the background leaving the current shell available for other commands).
 
 ## Documentation
 
