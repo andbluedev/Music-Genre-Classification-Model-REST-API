@@ -33,11 +33,12 @@ async def upload_sound_and_predict(audio_file: UploadFile = File(...)):
     extension = os.path.splitext(audio_file.filename)[1]
     logger.info(f"Processing: {audio_file.filename}")
     _, path = tempfile.mkstemp(prefix='parser_', suffix=extension)
+    
     logger.info(f"Generated '{path}' temporary file ")
 
     if extension != ".mp3":
         raise HTTPException(status_code=400, detail="Uploded file should be an have an mp3 extension")
-
+    
     try:
         with open(path, 'ab') as f:
             for chunk in iter(lambda: audio_file.file.read(10000), b''):
@@ -52,7 +53,7 @@ async def upload_sound_and_predict(audio_file: UploadFile = File(...)):
 
     except Exception as e:
         logger.error(f"Error while processing file: {str(e)}")
-        raise HTTPException(status_code=400, detail="Uploded file should be an have an mp3 extension")
+        raise HTTPException(status_code=500, detail="Error while processing audio file.")
     finally: 
         # remove temp file
         os.close(_)

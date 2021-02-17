@@ -9,7 +9,6 @@ def extract_audio_file_features(song_file, scaler):
     extraction_offset = 60
 
     track_duration = librosa.get_duration(filename=song_file)
-
     # in some cases audio trakcs might have a duration of less than 90s which results in an empty array
     if track_duration < extraction_duration + extraction_duration:
         if track_duration <= extraction_duration:

@@ -1,0 +1,9 @@
+venv/
+venv
+README
+samples/
+samples
+.idea
+.vscode
+docker-compose.yaml
+__pycache__
