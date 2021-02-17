@@ -37,7 +37,7 @@ async def upload_sound_and_predict(audio_file: UploadFile = File(...)):
     logger.info(f"Generated '{path}' temporary file ")
 
     if extension != ".mp3":
-        raise HTTPException(status_code=400, detail="Uploded file should be an have an mp3 extension")
+        raise HTTPException(status_code=400, detail="Uplaoded file should have an mp3 extension")
     
     try:
         with open(path, 'ab') as f:
