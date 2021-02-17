@@ -1,0 +1,53 @@
+{
+	"info": {
+		"_postman_id": "039b8ce9-7dd0-4e1e-8a93-58140be9e538",
+		"name": "MusicGenreClassification - Model REST API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "healthcheck",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/live",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"live"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "predict",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "audio_file",
+							"type": "file",
+							"src": "/Users/andrewpouret/Workspace/Berkeley/IntroToDS/Booba-Rapti_World.mp3"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/predict",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"predict"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
