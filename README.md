@@ -1,5 +1,20 @@
 # Music-Genre-Classification-Model-REST-API
 
+## Context
+
+This project aims to predict the genre of a given song file using Data Science and Machine Learning techniques.
+
+This repository contains the REST API built using Fast API that serves the [Tensorflow](https://github.com/tensorflow/tensorflow) model and [librosa](https://github.com/librosa/librosa) to extract features from uploaded MP3 files.
+
+## Live Demo of the best Model
+
+- Web application: [https://classify.k8s.pouretadev.com/](https://classify.k8s.pouretadev.com/)
+
+## Related Repositories
+
+- Frontend - Web App: [https://github.com/andbluedev/Music-Genre-Classification-Model-Web-APP ](https://github.com/andbluedev/Music-Genre-Classification-Model-Web-APP)
+- Project Notebooks: [https://github.com/andbluedev/Music-Genre-Classification-Notebooks](https://github.com/andbluedev/Music-Genre-Classification-Notebooks)
+
 ## Development
 
 It is recommended to use a virtual python environment in order to install every dependency.
