@@ -6,7 +6,7 @@ This project aims to predict the genre of a given song file using Data Science a
 
 This repository contains the REST API built using Fast API that serves the [Tensorflow](https://github.com/tensorflow/tensorflow) model and [librosa](https://github.com/librosa/librosa) to extract features from uploaded MP3 files.
 
-## Live Demo of the best Model
+## Live Demo
 
 ![https://res.cloudinary.com/djeszd2cw/image/upload/v1613837192/classify/classify-screen_egx3at.png](https://res.cloudinary.com/djeszd2cw/image/upload/v1613837192/classify/classify-screen_egx3at.png)
 
