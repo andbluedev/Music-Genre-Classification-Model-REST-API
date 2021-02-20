@@ -8,6 +8,8 @@ This repository contains the REST API built using Fast API that serves the [Tens
 
 ## Live Demo of the best Model
 
+![https://res.cloudinary.com/djeszd2cw/image/upload/v1613837192/classify/classify-screen_egx3at.png](https://res.cloudinary.com/djeszd2cw/image/upload/v1613837192/classify/classify-screen_egx3at.png)
+
 - Web application: [https://classify.k8s.pouretadev.com/](https://classify.k8s.pouretadev.com/)
 
 ## Related Repositories
